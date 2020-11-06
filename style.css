@@ -543,6 +543,9 @@ MEDIA QUERIES
 GENERAL
 =======================
 */
+.services {
+    padding-top: 0;
+}
 
     .services_block2 img {
         display: none;
@@ -563,4 +566,10 @@ GENERAL
         background: #ebebeb;
         padding: 15px 10%
     }
+
+    #accueil:target {
+        margin-top: -90px;
+        padding-top: 90px;
+    }
+
 }
