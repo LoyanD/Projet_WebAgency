@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <title>Web Agency</title>
+</head>
+
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img id="logo" src="images/logo.png" alt="Logo WebAgency">
+        </div>
+        <nav id= my_links>
+            <div id="burger">
+                <input type="checkbox" id="checkbox" >
+                <div id="burger_checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="menu">
+                    <li><a  href="#accueil">Accueil</a></li>
+                    <li><a  href="#services">Services</a></li>
+                    <li><a  href="#portfolio">Portfolio</a></li>
+                    <li><a  href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="main">
+        <header id="accueil">
+            <span id="notre_slogan"></span>
+            <div id="slider">
+                <span id="slideaimg1" class="cibles"></span>
+                <span id="slideaimg2" class="cibles"></span>
+                <div id="betat">
+                </div>
+                <div id="images_slider">
+                    <img id="photo1" class="photos_slide" src="images/slider/bg1.jpg" alt="Photo d'illustration de la WebAgency 1" />
+                    <img id="photo2" class="photos_slide" src="images/slider/bg2.jpg" alt="Photo d'illustration de la Webagency 2" />
+                </div>
+                <div id="titre_slider">
+                    <h1><span id="nom_entreprise">Webagency</span> : l'agence de tous<br />vos projets !</h1>
+                    <p>
+                        Vous avez un projet Web ? La WebAgency vous aide à le réaliser !<br />
+                        <a id="plus_dinfos" href="#contact">Plus d'infos</a>
+                    </p>	
+                </div>
+                <div id="boutons_slider">
+                    <a href="#slideaimg1" id="bt1"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#slideaimg2" id="bt2"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </header>
+
+
+        <div id="services">
+            <div class="services_block1">
+                <h2>NOS SERVICES</h2>
+                <div class="divider">
+                    <span class="divider_bar"></span>
+                    <span class="divider_ball"></span>
+                    <span class="divider_bar"></span>
+                </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo animi totam soluta perspiciatis, ab illum modi delectus voluptates, porro harum voluptatum itaque pariatur optio.</p>
+
+
+            <div class="services_block2">
+                <div>
+                    <img src="images/main-feature.png" alt="photo d'un ordinateur">
+                </div>
+                <div>
+                    <div class='services_items'>
+                        <div class="illustration">
+                            <span class="icones"><i class="fa fa-chart-line" title="UX design"></i></span>
+                            <span class="ball"><i class="fa fa-circle"></i></span>
+                        </div>
+                        <div class="services_description">
+                            <h4>UX design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sunt alias quo in nostrum ea ratione assumenda minus quisquam cumque?</p>
+                        </div>
+                    </div>
+                    <div class='services_items'>
+                        <div class="illustration">
+                            <span class="icones"><i class="fa fa-cubes" title="UI design"></i></span>
+                            <span class="ball"><i class="fa fa-circle"></i></span>
+                        </div>
+                        <div class="services_description">
+                            <h4>UI design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sunt alias quo in nostrum ea ratione assumenda minus quisquam cumque?</p>
+                        </div>
+                    </div>
+                    <div class='services_items'>
+                        <div class="illustration">
+                            <span class="icones"><i class="fa fa-chart-pie" title="SEO"></i></span>
+                            <span class="ball"><i class="fa fa-circle"></i></span>
+                        </div>
+                        <div class="services_description">
+                            <h4>SEO</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sunt alias quo in nostrum ea ratione assumenda minus quisquam cumque?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="divider">
+                <span class="divider_bar"></span>
+                <span class="divider_ball"></span>
+                <span class="divider_bar"></span>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <div class="portfolio_toolbar">
+                <button class="btn portfolio-btn-active" data-filter="*">All Works</button>
+                <button class="btn" data-filter="creative">Creative</button>
+                <button class="btn" data-filter="corporate">Corporate</button>
+                <button class="btn" data-filter="portfolio">Portfolio</button>
+            </div>
+
+
+            <div class="container">
+                <div class="grid">
+                    <div class="grid_item" data-filter="creative">
+                        <div class="imageholder">
+                            <img class="responsive-image grid-item__image" src="portfolio/01.jpg" alt="portfolio item 1 Rubis Opticiens">
+                        </div>
+                    </div>
+                    <div class="grid_item" data-filter="creative">
+                        <div class="imageholder">
+                            <img class="responsive-image grid-item__image" src="portfolio/02.jpg" alt="portfolio item 2 Lapin scapes">
+                        </div>
+                    </div>
+                    <div class="grid_item" data-filter="corporate">
+                        <div class="imageholder">
+                            <img class="responsive-image grid-item__image" src="portfolio/03.jpg" alt="portfolio item 3 Pompadours">
+                        </div>
+                    </div>
+                    <div class="grid_item" data-filter="corporate">
+                        <div class="imageholder">
+                            <img class="responsive-image grid-item__image" src="portfolio/04.jpg" alt="portfolio item 4 CV essential">
+                        </div>
+                    </div>
+                    <div class="grid_item" data-filter="corporate">
+                        <div class="imageholder">
+                            <img class="responsive-image grid-item__image" src="portfolio/05.jpg" alt="portfolio item 5 Northcountry shopping bag">
+                        </div>
+                    </div>
+                    <div class="grid_item" data-filter="portfolio">
+                        <div class="imageholder">
+                            <img class="responsive-image grid-item__image" src="portfolio/06.jpg" alt="portfolio item 6 intelli agence de voyage">
+                        </div>
+                    </div>
+                    <div class="grid_item" data-filter="portfolio corporate">
+                        <div class="imageholder">
+                            <img class="responsive-image grid-item__image" src="portfolio/07.jpg" alt="portfolio item 7 tekcor">
+                        </div>
+                    </div>
+                    <div class="grid_item" data-filter="portfolio creative">
+                        <div class="imageholder">
+                            <img class="responsive-image grid-item__image" src="portfolio/08.jpg" alt="portfolio item 8 photoshop galaxie">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246079934!2d2.347636915222328!3d48.873055307628746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris!5e0!3m2!1sfr!2sfr!4v1602243632539!5m2!1sfr!2sfr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+            <form action="#">
+                <div>
+                    <address>
+                        <h4>WebAgency SAS</h4>
+                        <p>25 Rue d'Hauteville 75010 Paris</p>
+                        <p>Tel : 01 02 03 04 05</p>
+                        </address>
+                    <input type="text" id="name" value="Name">
+                </div>
+                <div>
+                    <input type="text" id="email" value="Email">
+                </div>
+                <div>
+                    <input type="text" id="subject" value="Subject">
+                </div>
+                <div>
+                    <textarea name="message" id="message"  cols="30" rows="10">Message</textarea>
+                </div>
+                <div class="button">
+                <button type="submit" class="btn btn--blue btn--small btn--bottom-border--darkblue" value="Send Message">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
